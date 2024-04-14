@@ -1,0 +1,79 @@
+.feed {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: minmax(250px, 1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 30px;
+  margin-top: 15px;
+}
+
+@media (max-width: 768px) {
+.feed {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+.feed {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.card {
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.card img {
+  border-radius: 5px;
+  width: 100%;
+}
+
+.card h2 {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #1a1a1a;
+  margin-top: 0.5rem;
+  margin-bottom: 0.75rem;
+  margin-left: 5px;
+}
+
+.card h3 {
+  font-weight: 700;
+  font-size: 1rem;
+  color: #606060;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  margin-left: 5px;
+}
+
+.card p {
+  line-height: 1.5;
+  color: #4a4a4a;
+  margin-bottom: 0.75rem;
+  font-size: 14px;
+  margin-left: 5px;
+}
+
+@media (max-width: 768px) {
+.card h2 {
+    font-size: 16px;
+  }
+
+.card p {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+.card h2 {
+    font-size: 14px;
+  }
+
+.card p {
+    font-size: 10px;
+  }
+}

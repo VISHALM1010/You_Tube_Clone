@@ -1,0 +1,77 @@
+nav {
+    padding: 10px 2%;
+    justify-content: space-between;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    background: #fff;
+    top:0;
+    position: sticky;
+    z-index: 100;
+}
+
+.nav-left .menu_icon {
+    width: 25px;
+    margin-right: 25px;
+}
+
+.nav-left .logo {
+    width: 60px;
+}
+
+.nav-middle .Search_box {
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    margin-right: 15px;
+    padding: 10px 12px;
+}
+
+.nav-middle .Search_box input {
+    border: 0;
+    width: 400px;
+    outline:0;
+    background-color: transparent;
+}
+
+.nav-middle .Search_box img {
+    width: 17px;
+}
+
+.nav-right img {
+    width: 25px;
+    margin-right: 25px;
+}
+
+.nav-right .Profile_icon {
+    width: 35px;
+    border-radius: 50%;
+}
+
+.subscribed_list h3 {
+    font-size: 15px;
+    margin: 20px 0;
+    color: #3c3a3a;
+}
+
+.subscribed_list img {
+    border-radius: 50%;
+    width: 25px;
+    margin-right: 20px;
+}
+
+@media (max-width:900px) {
+    .menu_icon {
+        display: none;
+    }
+    .nav-right img {
+        display: none;
+    }
+    .nav-right .Profile_icon {
+        display: block;
+        width: 30px;
+    }
+    .logo {
+        width: 50px;
+    }
+    .nav-middle .Search_box input {
+        width: 100px;
+    }
+}
